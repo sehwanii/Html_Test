@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+     선택자 우선순위
+    1. 인라인
+    2. id
+    3. class
+    4. 태그
+-->
+<html>  
+    <head>
+        <meta charset = "UTF-8">
+        <title>선택자 적용 연습</title>
+        <style>
+            h1{
+                color : skyblue;
+                font-family : cursive;
+            }
+            #red{
+                color : red;
+                font-family: fantasy;
+                text-align:right;
+            }
+            .cen{
+                color : green;
+                font-family: monospace;
+                text-align: center;
+                font-weight:bolder;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>제목1</h1>
+        <p id = red>문단1</p>
+        <p class = "cen">문단2</p>
+        <p>문단3</p>
+        <h1>제목2</h2>
+        <p>문단1</p>
+        <p class = "cen">문단2</p>
+        <p>문단3</p>
+        <ul>
+            <li>항목1</li>
+            <li class = "cen">항목2</li>
+        </ul>
+    </body>
+</html>
